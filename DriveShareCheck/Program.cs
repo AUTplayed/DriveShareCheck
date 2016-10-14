@@ -16,7 +16,7 @@ namespace DriveShareCheck
         {
             Console.WriteLine($"Looking for Drive at {startpath}");
             IterateDirectories(startpath);
-            Console.WriteLine($"Found {dip.Count} shared Files:\n");
+            Console.WriteLine($"Found {dip.Count} shared Files/Directories:\n");
             foreach (var path in dip)
             {
                 Console.WriteLine(path);
