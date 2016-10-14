@@ -15,8 +15,9 @@ namespace DriveShareCheck
         private static void Main(string[] args)
         {
             Console.WriteLine($"Looking for Drive at {startpath}");
+            Console.WriteLine("Note: This Application can only detect shared Directories, but not Files");
             IterateDirectories(startpath);
-            Console.WriteLine($"Found {dip.Count} shared Files/Directories:\n");
+            Console.WriteLine($"Found {dip.Count} shared Directories:\n");
             foreach (var path in dip)
             {
                 Console.WriteLine(path);
